@@ -25,31 +25,31 @@ jobs:
       - name: Artifacts listing
         run: make status
 
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@master
         name: macos/amd64 artifact
         with:
           name: h2tp
           path: target/darwin/amd64/h2tp
 
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@master
         name: linux/amd64 artifact
         with:
           name: h2tp
           path: target/linux/amd64/h2tp
 
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@master
         name: linux/arm64 artifact
         with:
           name: h2tp
           path: target/linux/arm64/h2tp
 
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@master
         name: linux/arm artifact
         with:
           name: h2tp
           path: target/linux/arm/h2tp
 
-      - uses: actions/upload-artifact@2
+      - uses: actions/upload-artifact@master
         name: windows/amd64 artifact
         with:
           name: h2tp

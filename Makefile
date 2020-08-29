@@ -1,7 +1,7 @@
 GOPATH=$(shell go env GOPATH)
 MAIN_FILE=main.go
 
-all: clear download-deps build-all status
+all: clear download-deps build status
 
 status:
 	@echo Generated artifacts:
@@ -12,7 +12,7 @@ clear:
 	@rm -rf target/
 	@mkdir -p target/
 
-build-all: build-macos build-linux build-windows
+build: build-macos build-linux build-windows
 
 build-macos:
 	@echo Building MacOS binary
